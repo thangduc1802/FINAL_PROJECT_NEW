@@ -1,0 +1,62 @@
+<!--
+Learnings Page Template
+
+- This template provides the structure for the "Deine Learnings" (Your Learnings) page of the My Book App.
+- It allows users to view their favorite books and add or update notes about their key learnings for each book.
+- The template extends a base navigation layout and customizes the content block to display a table of favorite books.
+- Each book entry includes a form with a text area for users to input or update their learning notes.
+- Users can save their notes by submitting the form, which sends the data to the '/learnings' endpoint via a POST request.
+- If the user has no favorite books, the template displays a message encouraging them to add books to their favorites to store their key learnings.
+
+Test 1: Adding Learning Notes
+   - Description: Input a new learning note and click the "Speichern" button.
+   - Expected Result: The note should appear in the learning section.
+
+   Test 2: Display Learning Notes**
+   - Description: Navigate to the learnings page and check that all notes are displayed correctly.
+   - Expected Result: The learning notes should show the content of each note.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+
+{% extends "navigation.html" %}
+
+{% block title %}Deine Learnings{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Deine Learnings</h1>
+
+    {% if favorites %}
+    <table>
+        <thead>
+            <tr>
+                <th>Buchtitel</th>
+                <th>Autor</th>
+                <th>Deine Key Learnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in favorites %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>
+                    <form method="POST" action="/learnings">
+                        <input type="hidden" name="book_isbn" value="{{ book.isbn }}">
+                        <textarea name="learning" rows="2" cols="40">{{ book.learning }}</textarea>
+                        <button type="submit">Speichern</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>Du hast keine gespeicherten Bücher. Füge Bücher zu deinen Favoriten hinzu, um deine Key Learnings zu notieren und zu speichern.</p>
+    {% endif %}
+</div>
+{% endblock %}

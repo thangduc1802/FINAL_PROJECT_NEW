@@ -1,0 +1,133 @@
+<!--
+Favorites Page Template
+
+- This template provides the structure for displaying and managing the user's favorite books.
+- It allows users to filter their favorite books by category, view detailed information for each book, and remove selected favorites.
+- The template extends a base navigation layout and customizes the content block to display favorite books in a card format.
+- Each book card includes a checkbox for selection, allowing users to choose multiple books for removal.
+- A filtering form is available to narrow down favorites based on categories, which updates the displayed list.
+- If no favorites are found for the selected category, a message and a button to search for new books are displayed.
+- Users can remove selected books from their favorites using a form that submits the selected ISBNs via a POST request to the '/remove_favorites' endpoint.
+
+Test 1: Adding a Book to Favorites
+   - Description: Click the button to add a book to favorites from the search results.
+   - Expected Result: The book should appear in the favorites section.
+
+   Test 2: Display of Favorites List
+   - Description: Navigate to the favorites page and check that the list of favorite books displays correctly.
+   - Expected Result: All added favorites should be displayed with relevant details.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+
+{% extends "navigation.html" %}
+
+{% block title %}Deine Favoriten{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Deine Favoriten</h1>
+        <form method="GET" action="/favorites" class="filter-form">
+            <label for="category">Favoriten nach Kategorie filtern:</label>
+            <select name="category" id="category">
+                <option value="">Alle Kategorien</option>
+                <option value="Biologie" {% if category_filter == 'Biologie' %}selected{% endif %}>Biologie</option>
+                <option value="Technologie" {% if category_filter == 'Technologie' %}selected{% endif %}>Technologie</option>
+                <option value="Wirtschaft" {% if category_filter == 'Wirtschaft' %}selected{% endif %}>Wirtschaft</option>
+                <option value="Mathematik" {% if category_filter == 'Mathematik' %}selected{% endif %}>Mathematik</option>
+                <option value="Physik" {% if category_filter == 'Physik' %}selected{% endif %}>Physik</option>
+                <option value="Chemie" {% if category_filter == 'Chemie' %}selected{% endif %}>Chemie</option>
+                <option value="Medizin" {% if category_filter == 'Medizin' %}selected{% endif %}>Medizin</option>
+                <option value="Informatik" {% if category_filter == 'Informatik' %}selected{% endif %}>Informatik</option>
+                <option value="Ingenieurwesen" {% if category_filter == 'Ingenieurwesen' %}selected{% endif %}>Ingenieurwesen</option>
+                <option value="Umweltwissenschaften" {% if category_filter == 'Umweltwissenschaften' %}selected{% endif %}>Umweltwissenschaften</option>
+                <option value="Philosophie" {% if category_filter == 'Philosophie' %}selected{% endif %}>Philosophie</option>
+                <option value="Geschichte" {% if category_filter == 'Geschichte' %}selected{% endif %}>Geschichte</option>
+                <option value="Kunstwissenschaften" {% if category_filter == 'Kunstwissenschaften' %}selected{% endif %}>Kunstwissenschaften</option>
+                <option value="Musikwissenschaft" {% if category_filter == 'Musikwissenschaft' %}selected{% endif %}>Musikwissenschaft</option>
+                <option value="Soziologie" {% if category_filter == 'Soziologie' %}selected{% endif %}>Soziologie</option>
+                <option value="Pädagogik" {% if category_filter == 'Pädagogik' %}selected{% endif %}>Pädagogik</option>
+                <option value="Psychologie" {% if category_filter == 'Psychologie' %}selected{% endif %}>Psychologie</option>
+                <option value="Politikwissenschaft" {% if category_filter == 'Politikwissenschaft' %}selected{% endif %}>Politikwissenschaft</option>
+                <option value="Rechtswissenschaften" {% if category_filter == 'Rechtswissenschaften' %}selected{% endif %}>Rechtswissenschaften</option>
+                <option value="Geografie" {% if category_filter == 'Geografie' %}selected{% endif %}>Geografie</option>
+                <option value="Sportwissenschaften" {% if category_filter == 'Sportwissenschaften' %}selected{% endif %}>Sportwissenschaften</option>
+                <option value="Astronomie" {% if category_filter == 'Astronomie' %}selected{% endif %}>Astronomie</option>
+                <option value="Meteorologie" {% if category_filter == 'Meteorologie' %}selected{% endif %}>Meteorologie</option>
+                <option value="Ozeanografie" {% if category_filter == 'Ozeanografie' %}selected{% endif %}>Ozeanografie</option>
+            </select>
+            <button type="submit" class="btn-small">Filtern</button>
+        </form>
+
+        {% if favorites %}
+            <form method="POST" action="/remove_favorites">
+                <div class="card-container">
+                    {% for book in favorites %}
+                    <div class="card" id="card-{{ loop.index }}">
+                        <label>
+                            <input type="checkbox" name="selected_books" value="{{ book.isbn }}" id="checkbox-{{ loop.index }}">
+                            <span>Kachel auswählen</span>
+                        </label>
+                        <h2>{{ book.title }}</h2>
+                        <p><strong>Autor:</strong> {{ book.author }}</p>
+                        <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+                        <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
+                        <p><strong>Kategorie:</strong> {{ book.category }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn-large">Ausgewählte Favoriten entfernen</button>
+            </form>
+        {% else %}
+            <p>Du hast noch keine Favoriten gespeichert oder keine Favoriten in dieser Kategorie.</p>
+
+            <a href="/search" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Bücher suchen</a>
+        {% endif %}
+    </div>
+
+    <script>
+        /**
+ * Label: Toggle Description Function
+ * 
+ * Short Description:
+ * Toggles the visibility of a book description element on a webpage.
+ * When triggered, the function will show the description if it is currently hidden,
+ * or hide it if it is currently visible.
+ * 
+ * Parameters:
+ * - index (number): The unique index of the book description element to be toggled.
+ *                   This index is used to construct the element's ID.
+ * 
+ * Usage:
+ * - This function is typically called when a user clicks a button or link to show
+ *   or hide the description of a book.
+ * - The function targets an element with an ID in the format 'description-{index}',
+ *   where {index} is replaced by the provided index parameter.
+ * 
+ * Example:
+ * - HTML Element: <div id="description-1" style="display:none;">This is a book description.</div>
+ * - JavaScript Call: toggleDescription(1);
+ * - Outcome: The div with ID 'description-1' will toggle between being shown and hidden.
+ */
+function toggleDescription(index) {
+    var description = document.getElementById('description-' + index);
+    if (description.style.display === 'none') {
+        description.style.display = 'block';
+    } else {
+        description.style.display = 'none';
+    }
+}
+
+        function toggleDescription(index) {
+            var description = document.getElementById('description-' + index);
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
+{% endblock %}

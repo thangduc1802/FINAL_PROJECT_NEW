@@ -1,0 +1,33 @@
+<!--
+Login Page Template
+
+- This template provides the structure for the "Anmeldung" (Login) page of the My Book App.
+- It allows users to enter their username and password to authenticate and access their account.
+- The template extends a base navigation layout and customizes the content block with a login form.
+- The form requires users to input their username and password and then submits these credentials via a POST request to the '/login' endpoint for authentication.
+- Proper input validation is ensured through the `required` attribute on the username and password fields, which prompts users to fill in the fields before submitting.
+- If the login is successful, the user is redirected to the appropriate page; otherwise, feedback will be managed by the backend.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+{% extends "navigation.html" %}
+
+{% block title %}Anmeldung{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Anmelden</h1>
+        <form method="POST" action="/login">
+            <label for="username">Benutzername:</label>
+            <input type="text" name="username" required>
+            <br><br>
+            <label for="password">Passwort:</label>
+            <input type="password" name="password" required>
+            <br><br>
+            <button type="submit" class="btn-large">Anmelden</button>
+        </form>
+    </div>
+{% endblock %}

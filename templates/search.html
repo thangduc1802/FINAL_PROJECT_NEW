@@ -1,0 +1,67 @@
+<!--
+Search Books Page Template
+
+- This template provides the structure for the "Bücher suchen" (Search Books) page of the My Book App.
+- It allows users to select a field of interest and optionally specify a topic for more targeted book searches.
+- The template extends a base navigation layout and customizes the content block with a form for entering search criteria.
+- Users can choose from various academic and scientific fields, making the search experience more personalized.
+- The form submits the search query to the backend using a POST request to the '/search' endpoint.
+
+  Test 1: Search Functionality
+   - Description: Input the field of expertise along with the topic in the search bar and click the search button.
+   - Expected Result: The search results should display books matching the search criteria.
+
+   Test 2: More Info Button in Search Results
+   - Description: Click the "Mehr Infos" button for a book in the search results.
+   - Expected Result: Additional information for that book should be displayed.
+
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+
+{% extends "navigation.html" %}
+
+{% block title %}Bücher suchen{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Bücher suchen</h1>
+        <form method="POST" action="/search">
+            <label for="field">Für welches Fachgebiet interessierst du dich?</label>
+            <select name="field" required>
+                <option value="Biologie">Biologie</option>
+                <option value="Technologie">Technologie</option>
+                <option value="Wirtschaft">Wirtschaft</option>
+                <option value="Mathematik">Mathematik</option>
+                <option value="Physik">Physik</option>
+                <option value="Chemie">Chemie</option>
+                <option value="Medizin">Medizin</option>
+                <option value="Informatik">Informatik</option>
+                <option value="Ingenieurwesen">Ingenieurwesen</option>
+                <option value="Umweltwissenschaften">Umweltwissenschaften</option>
+                <option value="Philosophie">Philosophie</option>
+                <option value="Geschichte">Geschichte</option>
+                <option value="Kunstwissenschaften">Kunstwissenschaften</option>
+                <option value="Musikwissenschaft">Musikwissenschaft</option>
+                <option value="Soziologie">Soziologie</option>
+                <option value="Pädagogik">Pädagogik</option>
+                <option value="Psychologie">Psychologie</option>
+                <option value="Politikwissenschaft">Politikwissenschaft</option>
+                <option value="Rechtswissenschaften">Rechtswissenschaften</option>
+                <option value="Geografie">Geografie</option>
+                <option value="Sportwissenschaften">Sportwissenschaften</option>
+                <option value="Astronomie">Astronomie</option>
+                <option value="Meteorologie">Meteorologie</option>
+                <option value="Ozeanografie">Ozeanografie</option>
+            </select>
+            <br><br>
+            <label for="topic">Welches Thema interresiert dich, wo möchtest du dich bilden?</label>
+            <input type="text" name="topic">
+            <br><br>
+            <button type="submit" class="btn-large">Suchen</button>
+        </form>
+    </div>
+{% endblock %}

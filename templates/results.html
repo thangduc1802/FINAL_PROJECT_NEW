@@ -1,0 +1,102 @@
+<!--
+Search Results Page Template
+
+- This template provides the structure for displaying the search results in the My Book App.
+- It allows users to view books returned from a search query and add selected books to their favorites.
+- The template extends a base navigation layout and customizes the content block to display book information in a card format.
+- Each book card includes a "Mehr Infos" (More Info) button that toggles the visibility of the book's description using JavaScript.
+- Users can select books to add to their favorites by checking the corresponding checkbox and submitting the form.
+- The form sends the selected books to the '/add_favorite' endpoint via a POST request.
+- If no books are found, the template displays a message indicating that no results were found.
+- Includes inline JavaScript for toggling the description visibility and some custom styling for the description elements.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+{% extends "navigation.html" %}
+
+{% block title %}Suchergebnisse{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Suchergebnisse</h1>
+        {% if books %}
+            <form method="POST" action="/add_favorite">
+                <div class="card-container">
+                    {% for book in books %}
+                        <div class="card">
+                            <h2>{{ book.title }}</h2>
+                            <p><strong>Autor:</strong> {{ book.author }}</p>
+                            <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+                            <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
+                            
+                            <!-- "Mehr Infos" Button und Beschreibung -->
+                            <button type="button" class="btn-small" onclick="showDescription('{{ loop.index0 }}')">Mehr Infos</button>
+                            <div id="description-{{ loop.index0 }}" class="book-description" style="display:none;">
+                                <p>{{ book.description }}</p>
+                            </div>
+
+                            <!-- Formularfelder für das Hinzufügen zu Favoriten -->
+                            <input type="hidden" name="title_{{ loop.index }}" value="{{ book.title }}">
+                            <input type="hidden" name="author_{{ loop.index }}" value="{{ book.author }}">
+                            <input type="hidden" name="isbn_{{ loop.index }}" value="{{ book.isbn }}">
+                            <input type="hidden" name="publication_year_{{ loop.index }}" value="{{ book.publication_year }}">
+                            <input type="hidden" name="category_{{ loop.index }}" value="{{ book.category }}">
+                            <p>
+                                <input type="checkbox" name="selected_books" value="{{ loop.index }}">
+                                Zu Favoriten hinzufügen
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn-large">Favoriten speichern</button>
+            </form>
+        {% else %}
+            <p>Keine Bücher gefunden.</p>
+        {% endif %}
+    </div>
+
+    <script>
+        /**
+ * Funktion: Beschreibung ein-/ausblenden
+ * 
+ * Beschreibung:
+ * Diese Funktion blendet die Beschreibung eines Elements ein oder aus.
+ * Wenn die Funktion aufgerufen wird, überprüft sie den aktuellen Anzeigestatus 
+ * des Ziel-Elements. Ist das Element ausgeblendet, wird es eingeblendet, 
+ * und umgekehrt.
+ * 
+ * Parameter:
+ * - index (number): Der eindeutige Index, der dem Beschreibungselement zugeordnet ist.
+ *                   Dieser Index wird verwendet, um das Ziel-Element anhand seiner ID 
+ *                   zu identifizieren.
+ * 
+ * Beispiel:
+ * - HTML: <div id="description-1" style="display:none;">Dies ist eine Buchbeschreibung.</div>
+ * - JavaScript: showDescription(1);
+ * - Ergebnis: Das Div mit der ID 'description-1' wird zwischen 'einblenden' und 'ausblenden' umgeschaltet.
+ * 
+ * Verwendung:
+ * Diese Funktion wird typischerweise in Szenarien verwendet, in denen mehrere Beschreibungen 
+ * auf einer Seite angezeigt werden, z.B. eine Liste von Büchern mit erweiterbaren Beschreibungen.
+ * Sie ermöglicht es den Benutzern, jede Beschreibung individuell durch Klicken auf einen Button 
+ * oder Link anzuzeigen oder auszublenden.
+ */
+        function showDescription(index) {
+            const description = document.getElementById('description-' + index);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+
+    <style>
+        .book-description {
+            margin-top: 10px;
+        }
+    </style>
+{% endblock %}

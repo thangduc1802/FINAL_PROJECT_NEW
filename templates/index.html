@@ -1,0 +1,56 @@
+<!--
+Home Page Template for the Virtual Learning Library
+
+- This template provides the structure for the homepage of the virtual learning library application.
+- It greets the user with a welcome message and offers information about the app's functionalities, such as searching for new books, tracking reading progress, and adding notes.
+- The template adapts its content based on the user's login status:
+    - If the user is logged in, it displays options for accessing the book search, viewing reading stats, and adding notes.
+    - Displays the user's current and longest reading streaks, as well as the date of their last reading session, if streak data is available.
+    - If no streak data is available, it informs the user that the streaks are still being recorded.
+    - If the user is not logged in, it prompts them to log in or register, providing buttons for both actions.
+- The template extends a base navigation layout and customizes the content block to focus on user engagement and access to core features of the virtual library.
+
+Test 1: Home Page Loads Correctly
+   - Description: Verify that the home page displays the correct title and introductory message.
+   - Expected Result: The title should be "Willkommen in Ihrer virtuellen Lernbibliothek."
+
+   Test 2: Content Display on Home Page**
+   - Description: Check that relevant content is displayed on the home page.
+   - Expected Result: The main content area should show welcome information and any featured sections.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+
+{% extends "navigation.html" %}
+
+{% block title %}Willkommen in Ihrer virtuellen Lernbibliothek{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Willkommen in Ihrer virtuellen Lernbibliothek</h1>
+        
+        {% if session.user_id %}
+            <p>Entdecken Sie neue Bücher mit der lehrreichen Suchfunktion, verfolgen Sie Ihren Lesefortschritt und lassen Sie sich Ihre persönlichen Lese-Statistiken anzeigen. Notieren Sie wertvolle Erkenntnisse zu Ihren Lieblingsbüchern und setzen Sie virtuelle Lesezeichen, um jederzeit nahtlos weiterlesen zu können.</p>
+            
+            {% if streak_data %}
+                <div class="streak-info">
+                    <h2>Ihre Lese-Stats</h2>
+                    <p>Aktuelle Streak: {{ streak_data.current_streak }} Tage</p>
+                    <p>Längste Streak: {{ streak_data.longest_streak }} Tage</p>
+                    <p>Letztes Lesen: {{ streak_data.last_read_date }}</p>
+                </div>
+            {% else %}
+                <p>Ihre Lese-Streaks werden noch erfasst.</p>
+            {% endif %}
+        {% else %}
+            <p>Loggen Sie sich ein, um die Büchersuche zu nutzen, Ihre Lese-Streak zu sehen, Ihre Learnings zu notieren und Ihre virtuellen Lesezeichen zu setzen.</p>
+            <div class="auth-buttons">
+                <a href="{{ url_for('login') }}" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Login</a>
+                <a href="{{ url_for('register') }}" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-left: 10px;">Registrieren</a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

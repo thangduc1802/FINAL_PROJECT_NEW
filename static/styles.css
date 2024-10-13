@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Allgemeine Einstellungen */
+/**
+ * General settings for the page layout.
+ * - Sets the default font to 'Roboto'.
+ * - Applies a light background color and standard text color.
+ * 
+ * Test 1: Font Application
+ * - Expected Result: The 'Roboto' font is applied globally to all elements.
+ * 
+ * Test 2: Background Color
+ * - Expected Result: The page has a light background color (#f0f2f5) and the text color is dark (#333).
+ */
+body {
+    font-family: 'Roboto', sans-serif;  /* Verwende Roboto für die gesamte Seite */
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/**
+ * Styling for the main and secondary headers.
+ * 
+ * Test 1: Header Font Weight
+ * - Expected Result: h1 and h2 elements have bold (700) font weight.
+ * 
+ * Test 2: Header Alignment
+ * - Expected Result: h1 elements are centered and h2 elements are aligned properly with page content.
+ */
+h1, h2 {
+    font-weight: 700;  /* Fetter Text für Überschriften */
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/**
+ * Styling for text elements and links.
+ * 
+ * Test 1: Text and Label Styling
+ * - Expected Result: p and label elements have a font weight of 400 and a font color of #555.
+ * 
+ * Test 2: Link Styling
+ * - Expected Result: Links inherit the color of surrounding text and have no underline.
+ */
+p, label {
+    font-weight: 400;  /* Normale Schriftstärke für Text und Labels */
+    color: #555;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Zentrierte Layouts */
+/**
+ * Centering container for page content.
+ * 
+ * Test 1: Content Width
+ * - Expected Result: Content is centered and has a maximum width of 1200px, with 20px padding around the edges.
+ * 
+ * Test 2: Responsive Layout
+ * - Expected Result: The container adapts to screen sizes, maintaining 90% width but never exceeding 1200px.
+ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout for home page buttons */
+/**
+ * Flex layout for home page buttons.
+ * 
+ * Test 1: Button Layout on Large Screens
+ * - Expected Result: Buttons are aligned horizontally with 20px gaps between them.
+ * 
+ * Test 2: Button Layout on Small Screens
+ * - Expected Result: Buttons stack vertically with 15px gaps between them on screens smaller than 600px.
+ */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Große Buttons auf der Startseite */
+/**
+ * Styling for large buttons on the home page.
+ * 
+ * Test 1: Button Size and Padding
+ * - Expected Result: Large buttons have 20px padding and font size of 1.5em, making them easily clickable.
+ * 
+ * Test 2: Hover Effect
+ * - Expected Result: On hover, the button's background color changes from #007BFF to #0056b3 smoothly.
+ */
+.btn-large {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-large:hover {
+    background-color: #0056b3;
+}
+
+/* Kleinere Buttons für Mehr Infos */
+/**
+ * Styling for smaller buttons, typically used for additional actions.
+ * 
+ * Test 1: Button Size and Padding
+ * - Expected Result: Small buttons have padding of 8px and a font size of 0.9em.
+ * 
+ * Test 2: Hover Effect
+ * - Expected Result: On hover, the button’s background color changes from #007BFF to #0056b3 smoothly.
+ */
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+    background-color: #0056b3;
+}
+
+/* Formularstile */
+/**
+ * Styling for form inputs and selection elements.
+ * 
+ * Test 1: Input Size and Padding
+ * - Expected Result: Input fields and select dropdowns span 100% width of the container, with 10px padding.
+ * 
+ * Test 2: Input Border Styling
+ * - Expected Result: All input fields have a border radius of 4px and a 1px solid border with #ccc.
+ */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+/* Button Styling */
+/**
+ * General button styles, with transition effects for smoother interactions.
+ * 
+ * Test 1: Button Background Color
+ * - Expected Result: Buttons have a default background color of #007BFF and white text.
+ * 
+ * Test 2: Hover Effect
+ * - Expected Result: On hover, the background color smoothly transitions to #0056b3.
+ */
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Karten-Design für Suchergebnisse und Favoriten */
+/**
+ * Card layout for displaying book information.
+ * 
+ * Test 1: Card Layout in Grid
+ * - Expected Result: Cards are displayed in a grid, with each card having a minimum width of 250px.
+ * 
+ * Test 2: Card Hover Effect
+ * - Expected Result: On hover, the card lifts slightly (translateY(-10px)) for a dynamic effect.
+ */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Buchbeschreibung (initial ausgeblendet) */
+/**
+ * Styles for book description sections that are initially hidden.
+ * 
+ * Test 1: Description Visibility
+ * - Expected Result: Book descriptions are hidden by default and only displayed when triggered.
+ * 
+ * Test 2: Description Styling
+ * - Expected Result: When displayed, descriptions have a light background and a border on the left.
+ */
+.book-description {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    display: none;
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Header and Navigation Styles */
+/**
+ * Styling for the app header and navigation links.
+ * 
+ * Test 1: Navigation Layout
+ * - Expected Result: Navigation links are displayed inline with proper spacing.
+ * 
+ * Test 2: Header Background Color
+ * - Expected Result: The header background color is #007BFF and spans the entire width of the page.
+ */
+header {
+    background-color: #007BFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}

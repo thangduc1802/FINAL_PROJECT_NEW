@@ -1,0 +1,40 @@
+<!--
+Registration Page Template
+
+- This template provides the structure for the "Registrierung" (Registration) page of the My Book App.
+- It allows new users to create an account by entering a username and password.
+- The template extends a base navigation layout and customizes the content block with a registration form.
+- The form sends the registration data via a POST request to the '/register' endpoint for processing.
+- Includes input validation using the `required` attribute to ensure that both the username and password fields are filled before submission.
+- If an error occurs during registration (e.g., duplicate username), an error message is displayed in red below the form.
+- The design focuses on simplicity, providing a straightforward user experience for account creation.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+
+{% extends "navigation.html" %}
+
+{% block title %}Registrierung{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Registrieren</h1>
+        <form method="POST" action="/register">
+            <label for="username">Benutzername:</label>
+            <input type="text" name="username" required>
+            <br>
+            <label for="password">Passwort:</label>
+            <input type="password" name="password" required>
+            <br>
+            <button type="submit" class="btn">Registrieren</button>
+        </form>
+        
+        <!-- Display error message if provided -->
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

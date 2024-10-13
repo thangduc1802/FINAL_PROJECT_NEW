@@ -1,0 +1,261 @@
+2024-10-11 17:50:55,930 - INFO - Database connection established successfully.
+2024-10-11 17:50:55,935 - INFO - Table 'users' created or already exists with UNIQUE constraint on 'username'.
+2024-10-11 17:50:55,936 - INFO - Database tables were successfully created.
+2024-10-11 17:53:32,644 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 17:53:32,644 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 17:53:32,646 - INFO -  * Restarting with stat
+2024-10-11 17:53:33,584 - WARNING -  * Debugger is active!
+2024-10-11 17:53:33,590 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 17:53:48,191 - INFO - Database connection established successfully.
+2024-10-11 17:53:48,192 - INFO - Displayed streak data for user 1.
+2024-10-11 17:53:48,206 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-11 17:53:48,314 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:48] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-11 17:53:48,316 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:48] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-11 17:53:48,350 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:48] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1" 200 -
+2024-10-11 17:53:48,390 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:48] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-11 17:53:53,368 - INFO - Database connection established successfully.
+2024-10-11 17:53:53,369 - INFO - Displayed streak data for user 1.
+2024-10-11 17:53:53,384 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-11 17:53:53,485 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-11 17:53:53,485 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-11 17:53:53,532 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1[0m" 304 -
+2024-10-11 17:53:57,296 - INFO - Database connection established successfully.
+2024-10-11 17:53:57,297 - INFO - Displayed streak data for user 1.
+2024-10-11 17:53:57,306 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-11 17:53:57,326 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-11 17:53:57,329 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-11 17:53:57,340 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1[0m" 304 -
+2024-10-11 17:53:57,355 - INFO - 127.0.0.1 - - [11/Oct/2024 17:53:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-11 17:54:59,112 - INFO - Database connection established successfully.
+2024-10-11 17:54:59,113 - INFO - Displayed streak data for user 1.
+2024-10-11 17:54:59,126 - INFO - 127.0.0.1 - - [11/Oct/2024 17:54:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-11 17:54:59,155 - INFO - 127.0.0.1 - - [11/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-11 17:54:59,162 - INFO - 127.0.0.1 - - [11/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-11 17:54:59,207 - INFO - 127.0.0.1 - - [11/Oct/2024 17:54:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1[0m" 304 -
+2024-10-11 17:55:25,482 - INFO - Database connection established successfully.
+2024-10-11 17:55:25,483 - INFO - Displayed streak data for user 1.
+2024-10-11 17:55:25,493 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-11 17:55:25,511 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-11 17:55:25,514 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-11 17:55:25,524 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1[0m" 304 -
+2024-10-11 17:55:25,540 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-11 17:55:32,517 - WARNING - favorites.json does not exist.
+2024-10-11 17:55:32,517 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-11 17:55:32,526 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:32] "[35m[1mGET /favorites HTTP/1.1[0m" 500 -
+2024-10-11 17:55:32,546 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:32] "GET /favorites?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-11 17:55:32,550 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:32] "GET /favorites?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-11 17:55:32,563 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:32] "GET /favorites?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1" 200 -
+2024-10-11 17:55:32,578 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:32] "GET /favorites?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-11 17:55:42,024 - WARNING - favorites.json does not exist.
+2024-10-11 17:55:42,025 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-11 17:55:42,034 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:42] "[35m[1mGET /favorites HTTP/1.1[0m" 500 -
+2024-10-11 17:55:42,052 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:42] "[36mGET /favorites?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-11 17:55:42,055 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:42] "[36mGET /favorites?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-11 17:55:42,083 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:42] "[36mGET /favorites?__debugger__=yes&cmd=resource&f=console.png&s=ccBh3FGGHNa7IEEm4CkE HTTP/1.1[0m" 304 -
+2024-10-11 17:55:42,097 - INFO - 127.0.0.1 - - [11/Oct/2024 17:55:42] "[36mGET /favorites?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-11 17:58:10,515 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 17:58:10,516 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 17:58:10,518 - INFO -  * Restarting with stat
+2024-10-11 17:58:11,431 - WARNING -  * Debugger is active!
+2024-10-11 17:58:11,436 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 18:04:22,416 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 18:04:22,416 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 18:04:22,424 - INFO -  * Restarting with stat
+2024-10-11 18:04:23,328 - WARNING -  * Debugger is active!
+2024-10-11 18:04:23,333 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 18:04:28,163 - INFO - Unauthenticated access attempt to the homepage. Redirecting to registration.
+2024-10-11 18:04:28,164 - INFO - 127.0.0.1 - - [11/Oct/2024 18:04:28] "[32mGET / HTTP/1.1[0m" 302 -
+2024-10-11 18:04:28,169 - INFO - Registration form accessed.
+2024-10-11 18:04:28,216 - INFO - 127.0.0.1 - - [11/Oct/2024 18:04:28] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-10-11 18:04:28,320 - INFO - 127.0.0.1 - - [11/Oct/2024 18:04:28] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-11 18:04:28,325 - INFO - 127.0.0.1 - - [11/Oct/2024 18:04:28] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-11 18:04:28,364 - INFO - 127.0.0.1 - - [11/Oct/2024 18:04:28] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=9SzfRpHlPYav53xDBGiu HTTP/1.1" 200 -
+2024-10-11 18:04:28,389 - INFO - 127.0.0.1 - - [11/Oct/2024 18:04:28] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-11 18:06:11,337 - INFO -  * Detected change in 'C:\\Users\\CL921RQ\\OneDrive - EY\\Desktop\\Test\\Test1\\app.py', reloading
+2024-10-11 18:06:11,386 - INFO -  * Restarting with stat
+2024-10-11 18:06:12,415 - WARNING -  * Debugger is active!
+2024-10-11 18:06:12,421 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 18:06:18,847 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 18:06:18,847 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 18:06:18,849 - INFO -  * Restarting with stat
+2024-10-11 18:06:19,740 - WARNING -  * Debugger is active!
+2024-10-11 18:06:19,746 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 18:06:22,860 - INFO - Unauthenticated access attempt to the homepage. Redirecting to registration.
+2024-10-11 18:06:22,861 - INFO - 127.0.0.1 - - [11/Oct/2024 18:06:22] "[32mGET / HTTP/1.1[0m" 302 -
+2024-10-11 18:06:22,865 - INFO - Registration form accessed.
+2024-10-11 18:06:22,881 - INFO - 127.0.0.1 - - [11/Oct/2024 18:06:22] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-10-11 18:06:22,985 - INFO - 127.0.0.1 - - [11/Oct/2024 18:06:22] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-11 18:06:22,989 - INFO - 127.0.0.1 - - [11/Oct/2024 18:06:22] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-11 18:06:23,023 - INFO - 127.0.0.1 - - [11/Oct/2024 18:06:23] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=kPPzxG6Mylb6PptGygyT HTTP/1.1" 200 -
+2024-10-11 18:08:58,954 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 18:08:58,955 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 18:08:58,957 - INFO -  * Restarting with stat
+2024-10-11 18:08:59,872 - WARNING -  * Debugger is active!
+2024-10-11 18:08:59,878 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 18:09:04,561 - INFO - Registration form accessed.
+2024-10-11 18:09:04,601 - INFO - 127.0.0.1 - - [11/Oct/2024 18:09:04] "GET /register HTTP/1.1" 200 -
+2024-10-11 18:09:04,673 - INFO - 127.0.0.1 - - [11/Oct/2024 18:09:04] "GET /static/styles.css HTTP/1.1" 200 -
+2024-10-11 18:09:06,785 - INFO - Unauthenticated access attempt to the homepage. Redirecting to registration.
+2024-10-11 18:09:06,786 - INFO - 127.0.0.1 - - [11/Oct/2024 18:09:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-10-11 18:09:06,791 - INFO - Registration form accessed.
+2024-10-11 18:09:06,792 - INFO - 127.0.0.1 - - [11/Oct/2024 18:09:06] "GET /register HTTP/1.1" 200 -
+2024-10-11 18:09:06,814 - INFO - 127.0.0.1 - - [11/Oct/2024 18:09:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:09:41,691 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-11 18:09:41,691 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 18:09:41,693 - INFO -  * Restarting with stat
+2024-10-11 18:09:42,575 - WARNING -  * Debugger is active!
+2024-10-11 18:09:42,580 - INFO -  * Debugger PIN: 896-100-206
+2024-10-11 18:10:01,427 - INFO - Registration form accessed.
+2024-10-11 18:10:01,436 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:01] "GET /register HTTP/1.1" 200 -
+2024-10-11 18:10:01,506 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:06,033 - INFO - Database connection established successfully.
+2024-10-11 18:10:06,038 - INFO - User 'Andrea Berg' registered successfully.
+2024-10-11 18:10:06,039 - INFO - User 'Andrea Berg' registered successfully.
+2024-10-11 18:10:06,039 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:06] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-11 18:10:06,043 - INFO - Login form accessed.
+2024-10-11 18:10:06,056 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:06] "GET /login HTTP/1.1" 200 -
+2024-10-11 18:10:06,074 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:07,196 - INFO - Registration form accessed.
+2024-10-11 18:10:07,197 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:07] "GET /register HTTP/1.1" 200 -
+2024-10-11 18:10:07,217 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:08,508 - INFO - Database connection established successfully.
+2024-10-11 18:10:08,508 - WARNING - Attempted to register a duplicate user 'Andrea Berg'.
+2024-10-11 18:10:08,509 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:08] "POST /register HTTP/1.1" 200 -
+2024-10-11 18:10:08,528 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:09,762 - INFO - Login form accessed.
+2024-10-11 18:10:09,763 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:09] "GET /login HTTP/1.1" 200 -
+2024-10-11 18:10:09,785 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:10,875 - INFO - Database connection established successfully.
+2024-10-11 18:10:11,093 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-11 18:10:11,093 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-11 18:10:11,094 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-11 18:10:11,099 - INFO - Database connection established successfully.
+2024-10-11 18:10:11,099 - INFO - Displayed streak data for user ID: 1 with current streak: 0 days, longest streak: 0 days.
+2024-10-11 18:10:11,114 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:11] "GET / HTTP/1.1" 200 -
+2024-10-11 18:10:11,136 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:12,899 - INFO - Search form accessed.
+2024-10-11 18:10:12,913 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:12] "GET /search HTTP/1.1" 200 -
+2024-10-11 18:10:12,930 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:14,583 - INFO - Search query for 'Biologie ' returned 10 results.
+2024-10-11 18:10:14,583 - INFO - Successfully retrieved 10 books for query 'Biologie '.
+2024-10-11 18:10:14,584 - INFO - Search query 'Biologie' with topic '' returned 10 results.
+2024-10-11 18:10:14,611 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:14] "POST /search HTTP/1.1" 200 -
+2024-10-11 18:10:14,633 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:18,669 - WARNING - favorites.json does not exist.
+2024-10-11 18:10:18,671 - INFO - Book 'Ergebnisse Der Biologie' added to favorites for user 1.
+2024-10-11 18:10:18,671 - INFO - Added favorite book 'Ergebnisse Der Biologie' for user 1.
+2024-10-11 18:10:18,672 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:18] "[32mPOST /add_favorite HTTP/1.1[0m" 302 -
+2024-10-11 18:10:18,681 - INFO - Loaded favorites from favorites.json.
+2024-10-11 18:10:18,681 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-11 18:10:18,692 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:18] "GET /favorites HTTP/1.1" 200 -
+2024-10-11 18:10:18,711 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:36,395 - INFO - Loaded favorites from favorites.json.
+2024-10-11 18:10:36,396 - INFO - Removed 1 books from favorites for user 1.
+2024-10-11 18:10:36,397 - INFO - Removed favorites for user 1: ['9783642948053']
+2024-10-11 18:10:36,397 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:36] "[32mPOST /remove_favorites HTTP/1.1[0m" 302 -
+2024-10-11 18:10:36,406 - INFO - Loaded favorites from favorites.json.
+2024-10-11 18:10:36,407 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-11 18:10:36,407 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:36] "GET /favorites HTTP/1.1" 200 -
+2024-10-11 18:10:36,427 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:38,016 - INFO - Loaded favorites from favorites.json.
+2024-10-11 18:10:38,016 - INFO - User 1 has no favorites.
+2024-10-11 18:10:38,032 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:38] "GET /learnings HTTP/1.1" 200 -
+2024-10-11 18:10:38,054 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:39,968 - INFO - Loaded favorites from favorites.json.
+2024-10-11 18:10:39,968 - INFO - Displayed bookmarks for user 1.
+2024-10-11 18:10:39,983 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:39] "GET /bookmark HTTP/1.1" 200 -
+2024-10-11 18:10:40,009 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:40,814 - INFO - Loaded favorites from favorites.json.
+2024-10-11 18:10:40,814 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-11 18:10:40,815 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:40] "GET /favorites HTTP/1.1" 200 -
+2024-10-11 18:10:40,833 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:41,203 - INFO - Search form accessed.
+2024-10-11 18:10:41,203 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:41] "GET /search HTTP/1.1" 200 -
+2024-10-11 18:10:41,278 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:42,554 - INFO - Database connection established successfully.
+2024-10-11 18:10:42,555 - INFO - Displayed streak data for user ID: 1 with current streak: 0 days, longest streak: 0 days.
+2024-10-11 18:10:42,555 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:42] "GET / HTTP/1.1" 200 -
+2024-10-11 18:10:42,574 - INFO - 127.0.0.1 - - [11/Oct/2024 18:10:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-11 18:10:50,475 - INFO -  * Detected change in 'C:\\Users\\CL921RQ\\OneDrive - EY\\Desktop\\Test\\Test1\\app.py', reloading
+2024-10-11 18:10:50,517 - INFO -  * Restarting with stat
+2024-10-11 18:10:51,415 - WARNING -  * Debugger is active!
+2024-10-11 18:10:51,421 - INFO -  * Debugger PIN: 896-100-206
+2024-10-13 13:12:16,901 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 13:12:16,901 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:12:16,902 - INFO -  * Restarting with stat
+2024-10-13 13:12:17,074 - WARNING -  * Debugger is active!
+2024-10-13 13:12:17,080 - INFO -  * Debugger PIN: 982-506-079
+2024-10-13 13:13:49,966 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-13 13:13:49,967 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:13:49,968 - INFO -  * Restarting with stat
+2024-10-13 13:13:50,118 - WARNING -  * Debugger is active!
+2024-10-13 13:13:50,125 - INFO -  * Debugger PIN: 103-723-744
+2024-10-13 13:13:54,871 - WARNING - favorites.json does not exist.
+2024-10-13 13:13:54,872 - INFO - Favorites displayed for user 2 with category filter 'None'.
+2024-10-13 13:13:54,886 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:54] "GET /favorites HTTP/1.1" 200 -
+2024-10-13 13:13:54,908 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:54] "GET /static/styles.css HTTP/1.1" 200 -
+2024-10-13 13:13:56,020 - WARNING - favorites.json does not exist.
+2024-10-13 13:13:56,020 - INFO - Displayed bookmarks for user 2.
+2024-10-13 13:13:56,025 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:56] "GET /bookmark HTTP/1.1" 200 -
+2024-10-13 13:13:56,030 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:56] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-13 13:13:56,031 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:56] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=console.png&s=MXGWKkAUjuPfOJz0h9gO HTTP/1.1[0m" 304 -
+2024-10-13 13:13:56,031 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:56] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-13 13:13:56,031 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:56] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-13 13:13:56,034 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:13:57,745 - INFO - Search form accessed.
+2024-10-13 13:13:57,747 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:57] "GET /search HTTP/1.1" 200 -
+2024-10-13 13:13:57,753 - INFO - 127.0.0.1 - - [13/Oct/2024 13:13:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:11,040 - INFO - Search query for 'Wirtschaft Intelligent investieren' returned 10 results.
+2024-10-13 13:14:11,040 - INFO - Successfully retrieved 10 books for query 'Wirtschaft Intelligent investieren'.
+2024-10-13 13:14:11,041 - INFO - Search query 'Wirtschaft' with topic 'Intelligent investieren' returned 10 results.
+2024-10-13 13:14:11,051 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:11] "POST /search HTTP/1.1" 200 -
+2024-10-13 13:14:11,065 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:15,133 - WARNING - favorites.json does not exist.
+2024-10-13 13:14:15,134 - INFO - Book 'Intelligent investieren' added to favorites for user 2.
+2024-10-13 13:14:15,134 - INFO - Added favorite book 'Intelligent investieren' for user 2.
+2024-10-13 13:14:15,135 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:15] "[32mPOST /add_favorite HTTP/1.1[0m" 302 -
+2024-10-13 13:14:15,145 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:15,145 - INFO - Favorites displayed for user 2 with category filter 'None'.
+2024-10-13 13:14:15,146 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:15] "GET /favorites HTTP/1.1" 200 -
+2024-10-13 13:14:15,156 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:17,446 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:17,446 - INFO - Displayed bookmarks for user 2.
+2024-10-13 13:14:17,447 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:17] "GET /bookmark HTTP/1.1" 200 -
+2024-10-13 13:14:17,453 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:17] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=console.png&s=MXGWKkAUjuPfOJz0h9gO HTTP/1.1[0m" 304 -
+2024-10-13 13:14:17,454 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:17] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:17,457 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:17] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-13 13:14:17,458 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:17,459 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:17] "[36mGET /bookmark?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-13 13:14:19,652 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:19,652 - INFO - Updated current page to 11 for book Intelligent investieren (ISBN: 3898790649) for user 2.
+2024-10-13 13:14:19,653 - INFO - Updated page to 11 for book with ISBN 3898790649 for user 2.
+2024-10-13 13:14:19,655 - INFO - Database connection established successfully.
+2024-10-13 13:14:19,657 - ERROR - Database error while updating reading streak for user 2: no such table: users
+2024-10-13 13:14:19,657 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:19,657 - INFO - Loaded 1 favorites for user 2.
+2024-10-13 13:14:19,658 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:19] "POST /update_current_page HTTP/1.1" 200 -
+2024-10-13 13:14:19,666 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:22,556 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:22,556 - INFO - Loaded 1 favorites for user 2.
+2024-10-13 13:14:22,561 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:22] "GET /learnings HTTP/1.1" 200 -
+2024-10-13 13:14:22,569 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:26,821 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:26,822 - INFO - Updated learning for book 'Intelligent investieren' (ISBN: 3898790649) for user 2.
+2024-10-13 13:14:26,822 - INFO - Saved learning for book with ISBN 3898790649 for user 2.
+2024-10-13 13:14:26,822 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:26] "[32mPOST /learnings HTTP/1.1[0m" 302 -
+2024-10-13 13:14:26,831 - INFO - Loaded favorites from favorites.json.
+2024-10-13 13:14:26,831 - INFO - Loaded 1 favorites for user 2.
+2024-10-13 13:14:26,832 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:26] "GET /learnings HTTP/1.1" 200 -
+2024-10-13 13:14:26,839 - INFO - 127.0.0.1 - - [13/Oct/2024 13:14:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:43,589 - INFO -  * Detected change in '/Users/paulwilly/Documents/PY_Project_MKDOCS_FINAL/Test1/app.py', reloading
+2024-10-13 13:14:43,639 - INFO -  * Restarting with stat
+2024-10-13 13:14:44,000 - WARNING -  * Debugger is active!
+2024-10-13 13:14:44,006 - INFO -  * Debugger PIN: 103-723-744

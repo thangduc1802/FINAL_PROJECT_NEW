@@ -1,0 +1,102 @@
+<!--
+Base Layout Template for My Book App
+
+- This template provides the foundational structure for the My Book App, used as a base for other pages.
+- It includes a consistent header, navigation bar, and footer, along with a dynamic content block.
+- The navigation menu adapts based on the user's login status:
+    - Displays links to various features such as "Startseite" (Home), "Bücher suchen" (Search Books), "Favoriten" (Favorites), "Lesezeichen" (Bookmarks), and "Learnings" if the user is logged in.
+    - Shows login and registration options when the user is not logged in.
+- The template incorporates a JavaScript function (`toggleDescription`) for toggling the visibility of book descriptions, allowing for interactive UI elements.
+- Uses external Google Fonts for a consistent look and includes a custom CSS file for additional styling.
+- Extends the title and content dynamically using Jinja2 blocks, making it reusable for different pages in the application.
+
+   Test 1: Navigation Links Exist
+   - Description: Verify that all navigation links (Startseite, Bücher suchen, Favoriten, Lesezeichen, Learnings) are present in the navigation bar.
+   - Expected Result: All links should be visible and functional.
+
+   Test 2: Logout Link Visibility**
+   - Description: Verify that the logout link appears when the user is logged in.
+   - Expected Result: The logout link should be visible.
+
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Book App{% endblock %}</title>
+    
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <!-- JavaScript für das Umschalten der Beschreibung -->
+    <script>
+        /**
+ * Toggle Description Function
+ * 
+ * Description:
+ * Toggles the visibility of a description element for a book.
+ * When called, this function checks the current display status of the targeted description element.
+ * If the element is hidden, it will be shown; if it is visible, it will be hidden.
+ * 
+ * Parameters:
+ * - index (number): The unique index corresponding to the description element.
+ *                   This index is used to identify the target element by its ID.
+ * 
+ * Example:
+ * - HTML: <div id="description-1" style="display:none;">This is a book description.</div>
+ * - JavaScript: toggleDescription(1);
+ * - Outcome: The div with ID 'description-1' will toggle between being displayed and hidden.
+ * 
+ * Usage:
+ * This function is typically used in scenarios where multiple descriptions are displayed on a page,
+ * such as a list of books with expandable descriptions. It allows users to show or hide each description
+ * individually by clicking a button or link.
+ */
+        function toggleDescription(index) {
+            var description = document.getElementById('description-' + index);
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="/search">Bücher suchen</a></li>
+                    <li><a href="/favorites">Favoriten</a></li>
+                    <li><a href="/bookmark">Lesezeichen</a></li>
+                    <li><a href="/learnings">Learnings</a></li> <!-- Hinzufügen der Learnings-Seite -->
+                    {% if session.user_id %}
+                        <li><a href="/logout">Abmelden</a></li>
+                    {% else %}
+                        <li><a href="/login">Anmelden</a></li>
+                        <li><a href="/register">Registrieren</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 My Book App</p>
+        </footer>
+    </div>
+</body>
+</html>

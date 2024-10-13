@@ -1,0 +1,20 @@
+site_name: "Book Recommendation App Documentation"
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            docstring_style: "google"
+
+nav:
+  - Home: index.md
+  - API Documentation:
+      - App: "reference/app.md"
+      - Backend Modules:
+          - Database: "reference/database.md"
+          - Google Books API: "reference/google_books_api.md"
+          - JSON Storage: "reference/json_storage.md"

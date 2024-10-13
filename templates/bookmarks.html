@@ -1,0 +1,64 @@
+<!--
+Bookmark Page Template
+
+- This template provides the structure for displaying and updating the user's bookmarked reading progress.
+- It allows users to see their bookmarked books and update their current reading page for each book.
+- The template extends a base navigation layout and customizes the content block to display bookmarks in a table format.
+- Each book's current page can be updated through individual forms that submit the new page number via a POST request to the '/update_current_page' endpoint.
+- If no bookmarks are found, the template displays a message and a button that redirects to the book search page, encouraging users to add favorites.
+
+  Test 1: Updating Current Page of a Favorite Book
+   - Description: Input a new page number for a favorite book and click the "Aktualisieren" button.
+   - Expected Result: The page should reload, and the book's current page should reflect the updated value.
+
+   Test 2: Incorrect Page Number Submission
+   - Description: Input an invalid page number (e.g., negative or non-numeric) and submit.
+   - Expected Result: Should not be possible to put a negative or nun-numeric number in.
+
+Author: Paul, Tim, Thang
+Date: 06.10.2024
+Version: 0.1.0
+License: Free
+-->
+
+{% extends "navigation.html" %}
+
+{% block title %}Deine Lesezeichen{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Deine Lesezeichen</h1>
+
+    {% if favorites %}
+    <table>
+        <thead>
+            <tr>
+                <th>Buchtitel</th>
+                <th>Autor</th>
+                <th>Letzter Stand</th>
+                <th>Seitenzahl Aktualisieren</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in favorites %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.current_page }}</td>
+                <td>
+                    <form method="POST" action="/update_current_page">
+                        <input type="number" name="current_page" value="{{ book.current_page }}" min="0" required>
+                        <input type="hidden" name="book_isbn" value="{{ book.isbn }}">
+                        <button type="submit" class="btn-small">Aktualisieren</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>Du hast keine gespeicherten Bücher. Füge ein Buch zu deinen Favoriten hinzu, um deine virtuellen Lesezeichen einzutragen.</p>
+    <a href="/search" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Bücher suchen</a>
+    {% endif %}
+</div>
+{% endblock %}
