@@ -1,12 +1,12 @@
 ## Who we are
-Tim Rösch, 
-Thang, 
-Paul Willy
+- Tim Rösch: tim.roesch@de.ey.com
+- Thang Phung: thangduc1802@gmail.com 
+- Paul Willy: paulwilly2005@icloud.com
 
 
 ### How to start the application.
 
-1. Requirements installieren pip install -r requirements.txt
+1. Requirements installieren pip install -r req.txt
 
 2. Initialize Database with =>  python initialize_db.py
 
